@@ -1,6 +1,6 @@
-MRuby::Gem::Specification.new('c_and_ruby_extension_example') do |spec|
-  spec.license = 'MIT'
-  spec.author  = 'mruby developers'
+MRuby::Gem::Specification.new('mruby-mrgss') do |spec|
+  spec.license = 'Apache License Version 2.0 '
+  spec.author  = 'Manuel Quinteros, Ramiro Rojo'
 
   # Add compile flags
   # spec.cc.flags << ''
@@ -9,7 +9,13 @@ MRuby::Gem::Specification.new('c_and_ruby_extension_example') do |spec|
   # spec.mruby.cc.flags << '-g'
 
   # Add libraries
-  # spec.linker.libraries << 'external_lib'
+  spec.linker.libraries << 'glew32'
+  spec.linker.libraries << 'Ws2_32'
+  spec.linker.libraries << 'pthread'
+  spec.linker.libraries << 'SDL2'
+  spec.linker.libraries << 'SDL2main'
+  spec.linker.libraries << 'opengl32'
+  
 
   # Default build files
   # spec.rbfiles = Dir.glob("#{dir}/mrblib/*.rb")
