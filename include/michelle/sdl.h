@@ -20,7 +20,7 @@ sdl_bitmap_set_pixel (SDL_Surface *surface, int x, int y, Uint32 pixel);
 GLuint
 compile_shader_program (GLuint vertexShader, GLuint fragmentShader);
 GLuint
-compile_shader (char *shader, int type);
+compile_shader (const char *shader, int type);
 GLuint
 get_default_shader ();
 #endif /* INCLUDE_MICHELLE_SDL_H_ */
